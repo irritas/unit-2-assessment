@@ -17,7 +17,7 @@
 			<% todos.forEach(t => { %>
 				<li>
 					<form action="/<%= t.id %>?_method=DELETE" method="POST">
-						<label></label></lable><%= t.todo %> - <%= t.done ? 'Done' : 'Not Done' %></label>
+						<label><%= t.todo %> - <%= t.done ? 'Done' : 'Not Done' %></label>
 						<button type="submit">DELETE</button>
 					</form>
 				</li>
